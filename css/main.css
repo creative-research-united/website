@@ -1,0 +1,342 @@
+
+html {
+  position: relative;
+  min-height: 97%;
+}
+
+body {
+    overflow-x: hidden; /* #360033 */
+    background-color: "img/background.jpg";
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.nav-entry {
+  color: #85f9c8;
+}
+.nav-entry:hover,
+.nav-entry:focus,
+.nav-entry:active,
+.nav-entry.active {
+    outline: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: capitalize;
+    font-family: "HelveticaNeue-Light",
+                 "Helvetica Neue Light",
+                 "Helvetica Neue",
+                  Helvetica,Montserrat,Arial,sans-serif;
+    color: #fff;
+}
+
+
+h4 {
+  text-align: center;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+hr {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr:after,
+hr:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+    color: #fff;
+    background-color: #000;
+}
+
+.portfolio-text {
+  font-weight: 700;
+  color: #fff;
+}
+
+@media(min-width:768px) {
+    #welcome  .container {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    #welcome  .intro-text .name {
+        font-size: 4.75em;
+    }
+
+    #welcome .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 10px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+
+    .navbar-fixed-top.navbar-shrink>.active>a,
+    .navbar-fixed-top.navbar-shrink>.active>a:hover,
+    .navbar-fixed-top.navbar-shrink>.active>a:focus  {
+        padding: 10px 0;
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+.navbar {
+    text-transform: capitalize;
+    font-family: "HelveticaNeue-Light",
+                 "Helvetica Neue Light",
+                 "Helvetica Neue",
+                  Helvetica,Montserrat,Arial,sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.navbar a:focus {
+    outline: 0;
+    background-color: #fff;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus,
+.navbar .navbar-nav li a:hover,
+li a:active,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+ {
+    outline: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+  color: #000;
+}
+
+.navbar-default .navbar-toggle>.active>a,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+  color:  #000;
+  background: #fff;
+  background-color: #fff;
+  border-color: #000;
+}
+
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+}
+
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color:  #000;
+    background: #000;
+    background-color: #fff;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #fff;
+    background: 000;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  color: #fff;
+  background-color: #000;
+}
+
+.btn {
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:hover,
+.btn:active:focus {
+    outline: 0;
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    color: #fff;
+    background-color: #000;
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+}
+
+.signup_ {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
